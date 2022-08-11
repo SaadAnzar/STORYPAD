@@ -1,10 +1,11 @@
 {
   "name": "storypad",
   "version": "1.0.0",
-  "description": "App to post personal blogs",
+  "description": "App to read and write stories",
   "main": "app.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=production node app"
+    "start": "cross-env NODE_ENV=production node app",
+    "dev": "cross-env NODE_ENV=development nodemon app"
   },
   "author": "Anzar",
   "license": "MIT",
