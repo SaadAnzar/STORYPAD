@@ -64,7 +64,7 @@ router.get('/:id', ensureAuth, async (req, res) => {
     }
   } catch (err) {
     console.error(err)
-    res.render('error/404')
+    return res.render('error/404')
   }
 })
 
@@ -157,7 +157,7 @@ router.get('/user/:userId', ensureAuth, async (req, res) => {
     })
   } catch (err) {
     console.error(err)
-    res.render('error/500')
+    return res.render('error/500')
   }
 })
 
